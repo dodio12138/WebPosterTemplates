@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/booklist.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <title>BookList Poster</title>
+</head>
+<body>
+    <div class="panels">
+        <div class="input">
+            <div class="Text">
+                <div class="booklistext">
+                    <div class="tab">书单</div>
+                    <textarea placeholder="每行为一本书" class="textbook"></textarea>
+                </div>
+                <div class="bgtext">
+                    <div class="tab">背景文本</div>
+                    <textarea placeholder="每行对应每行" class="textbg"></textarea>
+                </div>
+            </div>
+            <div class="color">
+                <div class="textcolor"></div>
+                <div class="pbgcolor"></div>
+                <div class="bgcolor"></div>
+            </div>
+            <div class="Buttons">
+                <button class="gen">生成</button>
+                <button class="save">保存</button>
+            </div>
+        </div>
+        <div class="postershow">
+            <div class="posterlayer">
+                <div class="background">
+                    <div class="book mask">
+                        <div class="bookBackground"></div>
+                        <div class="backgroundtexts "></div>
+                        <div class="booknames">
+                            <div class="name">欢迎来到实在界的大荒漠</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/booklist.js"></script>
+</body>
+</html>

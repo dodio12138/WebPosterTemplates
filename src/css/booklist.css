@@ -1,0 +1,187 @@
+@font-face {
+    font-family: OldNews;
+    src: url("../../res/font/OldNewspapersSung.woff");
+}
+
+* {
+    margin: 0;
+    height: 100%;
+    font-family: 'OldNews', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+    font-family: 'OldNews', sans-serif;
+}
+
+.panels {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.postershow {
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterlayer {
+    position: relative;
+    width: 500px;
+    height: 700px;
+    margin: 3%;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 127, 126);
+    z-index: 1;
+}
+
+.book {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    box-shadow:
+        2.3px 2.3px 1.9px -8px rgba(0, 0, 0, 0.19),
+        5.4px 5.4px 4.3px -8px rgba(0, 0, 0, 0.28),
+        9.7px 9.7px 7.7px -8px rgba(0, 0, 0, 0.34),
+        16.1px 16.1px 12.8px -8px rgba(0, 0, 0, 0),
+        26.5px 26.5px 21.2px -8px rgba(0, 0, 0, 0.46),
+        46.2px 46.2px 37px -8px rgba(0, 0, 0, 0.53),
+        100px 100px 80px -8px rgba(0, 0, 0, 0.7);
+}
+
+.bookBackground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(215, 71, 70);
+}
+
+.backgroundtexts {
+    width: 150%;
+    height: 150%;
+    top: -15%;
+    left: -20%;
+    z-index: 0;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    letter-spacing: 0.4em;
+    transform: rotateZ(-30deg);
+}
+
+.backgroundtext {
+    font-size: 4em;
+    height: 4em;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    display: block;
+    white-space: nowrap;
+    letter-spacing: 0.4em;
+}
+
+.booknames {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 5%;
+}
+
+.mask {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* 使用 inset 函数定义裁剪区域的位置和大小 */
+  }
+
+.name {
+    display: flex;
+    background-color: rgb(241, 152, 144);
+    box-shadow: 0px 6px 13px 1px #2020205d;
+    color: white;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    font-family: 'OldNews', sans-serif;
+    font-size: 1.2em;
+    height: 1.2em;
+    align-items: center;
+    letter-spacing: 0.4em;
+}
+
+.input {
+    display: flex;
+    flex: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+    gap: 1%;
+}
+
+.Text {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.color {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.Buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.booklistext, .bgtext {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textbg, .textbook {
+    flex: 90%;
+    resize: unset;
+}
+
+.tab {
+    color: black;
+    font-size: 1.2em;
+    flex:10%;
+}
